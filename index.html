@@ -10,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes"/>
 <meta name="application-name" content="Plotcast"/>
 <meta name="description" content="Where Creators Meet the Screen — A secure platform connecting storytellers with producers and directors."/>
-<link rel="manifest" id="pwaManifest"/>
+<link rel="manifest" href="manifest.json"/>
 <!-- iOS splash / icons (inline SVG data URIs so single-file works) -->
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%230a0a0f'/%3E%3Ctext x='50%25' y='54%25' font-family='Georgia,serif' font-size='260' font-weight='900' fill='%23c9a84c' text-anchor='middle' dominant-baseline='middle'%3EP%3C/text%3E%3C/svg%3E"/>
 <title>Plotcast – Where Creators Meet the Screen</title>
@@ -1945,35 +1945,7 @@ if(window.top !== window.self) {
 /* ══════════════════════════════════════
    PWA: INLINE MANIFEST (no external file needed)
 ══════════════════════════════════════ */
-const manifestData = {
-  name: "Plotcast – Where Creators Meet the Screen",
-  short_name: "Plotcast",
-  description: "A secure platform connecting storytellers with producers and directors.",
-  start_url: "./",
-  display: "standalone",
-  orientation: "portrait",
-  background_color: "#0a0a0f",
-  theme_color: "#0a0a0f",
-  lang: "en",
-  categories: ["entertainment", "social", "business"],
-  icons: [
-    {
-      src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='30' fill='%230a0a0f'/%3E%3Ctext x='50%25' y='54%25' font-family='Georgia,serif' font-size='120' font-weight='900' fill='%23c9a84c' text-anchor='middle' dominant-baseline='middle'%3EP%3C/text%3E%3C/svg%3E",
-      sizes: "192x192", type: "image/svg+xml", purpose: "any maskable"
-    },
-    {
-      src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='80' fill='%230a0a0f'/%3E%3Ctext x='50%25' y='54%25' font-family='Georgia,serif' font-size='300' font-weight='900' fill='%23c9a84c' text-anchor='middle' dominant-baseline='middle'%3EP%3C/text%3E%3C/svg%3E",
-      sizes: "512x512", type: "image/svg+xml", purpose: "any maskable"
-    }
-  ],
-  shortcuts: [
-    { name: "Upload Story", short_name: "Upload", url: "./#upload" },
-    { name: "Discover Stories", short_name: "Discover", url: "./#discover" }
-  ]
-};
-const manifestBlob = new Blob([JSON.stringify(manifestData)], { type: 'application/json' });
-const manifestURL = URL.createObjectURL(manifestBlob);
-document.getElementById('pwaManifest').setAttribute('href', manifestURL);
+// Manifest loaded from external manifest.json
 
 /* ══════════════════════════════════════
    PWA: INLINE SERVICE WORKER (no external file needed)

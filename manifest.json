@@ -1,13 +1,15 @@
 {
   "name": "Plotcast",
   "short_name": "Plotcast",
-  "description": "Where Creators Meet the Screen",
+  "description": "Where Creators Meet the Screen — A secure platform connecting storytellers with producers and directors in the film industry.",
   "start_url": "/Plotcast/index.html",
   "scope": "/Plotcast/",
   "display": "standalone",
   "background_color": "#0a0a0f",
   "theme_color": "#c9a84c",
   "orientation": "portrait",
+  "lang": "en",
+  "categories": ["entertainment", "social", "business"],
   "icons": [
     {
       "src": "icon-192.png",
@@ -20,6 +22,18 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Upload Story",
+      "short_name": "Upload",
+      "url": "/Plotcast/index.html#upload"
+    },
+    {
+      "name": "Discover Stories",
+      "short_name": "Discover",
+      "url": "/Plotcast/index.html#discover"
     }
   ]
 }
