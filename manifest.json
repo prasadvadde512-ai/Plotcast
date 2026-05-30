@@ -6,34 +6,21 @@
   "scope": "/Plotcast/",
   "display": "standalone",
   "background_color": "#0a0a0f",
-  "theme_color": "#c9a84c",
+  "theme_color": "#0a0a0f",
   "orientation": "portrait",
   "lang": "en",
-  "categories": ["entertainment", "social", "business"],
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "https://prasadvadde512-ai.github.io/Plotcast/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "icon-512.png",
+      "src": "https://prasadvadde512-ai.github.io/Plotcast/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Upload Story",
-      "short_name": "Upload",
-      "url": "/Plotcast/index.html#upload"
-    },
-    {
-      "name": "Discover Stories",
-      "short_name": "Discover",
-      "url": "/Plotcast/index.html#discover"
     }
   ]
 }
