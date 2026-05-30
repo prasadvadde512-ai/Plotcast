@@ -2,7 +2,7 @@
   "name": "Plotcast",
   "short_name": "Plotcast",
   "description": "Where Creators Meet the Screen — A secure platform connecting storytellers with producers and directors in the film industry.",
-  "start_url": "/Plotcast/index.html",
+  "start_url": "/Plotcast/",
   "scope": "/Plotcast/",
   "display": "standalone",
   "background_color": "#0a0a0f",
@@ -11,16 +11,28 @@
   "lang": "en",
   "icons": [
     {
-      "src": "https://prasadvadde512-ai.github.io/Plotcast/icon-192.png",
+      "src": "/Plotcast/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
     },
     {
-      "src": "https://prasadvadde512-ai.github.io/Plotcast/icon-512.png",
+      "src": "/Plotcast/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/Plotcast/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Plotcast/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
