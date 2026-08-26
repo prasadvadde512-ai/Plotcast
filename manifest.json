@@ -1,25 +1,42 @@
 {
-  "name": "Plotcast",
+  "name": "Plotcast – Where Creators Meet the Screen",
   "short_name": "Plotcast",
-  "description": "Where Creators Meet the Screen",
-  "start_url": "/Plotcast/",
-  "scope": "/Plotcast/",
+  "description": "Protect your stories and connect with producers.",
+  "start_url": "./plotcast.html",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0a0a0f",
   "theme_color": "#0a0a0f",
-  "orientation": "portrait",
+  "categories": ["entertainment", "social"],
   "icons": [
     {
-      "src": "https://prasadvadde512-ai.github.io/Plotcast/icon-192.png",
+      "src": "icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     },
     {
-      "src": "https://prasadvadde512-ai.github.io/Plotcast/icon-512.png",
+      "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Discover",
+      "short_name": "Discover",
+      "description": "Browse creators and producers",
+      "url": "./plotcast.html#discover",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Messages",
+      "short_name": "Messages",
+      "description": "View your messages",
+      "url": "./plotcast.html#messages",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
     }
   ]
 }
